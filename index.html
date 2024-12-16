@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius CSS Previewer</title>
+</head>
+
+<style>
+    a:link{
+        color:antiquewhite
+    }
+    a:hover{
+        color:aquamarine
+    }
+    a:visited{
+        color:antiquewhite
+    }
+    body{
+        background-color:black;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color:antiquewhite;
+    }
+
+    #container{
+        background-color:blueviolet;
+        margin: auto;
+        margin-top: 20px;
+        padding: 10px;
+        width: 500px;
+        height: 500px;
+        text-align:center;
+        color:antiquewhite;
+        border-radius:20px;
+
+    }
+
+    #container2{
+        background-color:khaki;
+        margin: auto;
+        margin-top: 5px;
+        padding: 10px;
+        width: 500px;
+        height: 250px;
+        text-align:center;
+        color:tomato;
+        border-radius:20px;
+
+    }
+
+    #box{
+        background-color:burlywood;
+        margin:auto;
+        width:250px;
+        height:250px;
+        position:relative;
+    }
+
+    .labels{
+        color:midnightblue;
+        
+    }
+</style>
+
+<body>
+
+    <div id="container">
+        <h2>Border Radius Previewer</h2>
+        <br>
+
+        <label for="topLeft">top-left</label>
+        <input id="topLeft" type="text" placeholder = "0" size = "1">
+        <label for="topRight">top-right</label>
+        <input id="topRight" type="text" placeholder = "0" size = "1">
+        <label for="botLeft">bot-left</label>
+        <input id="botLeft" type="text" placeholder = "0" size = "1">
+        <label for="botRight">bot-right</label>
+        <input id="botRight" type="text" placeholder = "0" size = "1">
+        <br><br><br><br><br>
+
+        <div id="box">
+            <div class="labels" id="labelTL" style="position: absolute; top:10px; left:20px; width:20px; text-align:left;">0</div>
+            <div class="labels" id="labelTR" style="position: absolute; top:10px; right:20px; width:20px; text-align:right;">0</div>
+            <div class="labels" id="labelBL" style="position: absolute; bottom:10px; left:20px; width:20px; text-align:left;">0</div>
+            <div class="labels" id="labelBR" style="position: absolute; bottom:10px; right:20px; width:20px; text-align:right;">0</div>
+        </div>
+    </div>
+    <br><br>
+
+    <div id="container2">
+        <h3>Snippet:</h3>
+        <br>
+        <div id="snippet" style="text-align:left; padding:10px;"></div>
+
+    </div>
+    <br>
+    
+    <div style="text-align: center;"><a href="https://github.com/introvertices" style="bottom:0px">https://github.com/introvertices</a></div>
+    
+
+
+    <script src = "script.js"></script>
+</body>
+</html>
